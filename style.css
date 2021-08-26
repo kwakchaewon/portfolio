@@ -91,6 +91,9 @@ p{
     margin: 3px 0;
 }
 
+
+/* Navbar */
+
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -126,3 +129,40 @@ p{
     font-weight: var( --weight-semi-bold);
 }
 
+
+/* Home */
+
+#home{
+    text-align: center;
+    padding: 16px 0px;
+    background-color: #65AAF0;
+    color: var(--color-white);
+    background: url(images/cloudpic.png) center/cover no-repeat;
+}
+
+.home__title{
+    color: var(--color-white);
+}
+
+.home__description{
+    color: var(--color-white);
+    margin-bottom: 16px;    
+}
+
+.home__profile{
+    width: 250px;
+    height:250px;
+    border-radius: 75%;
+    margin-top:8px;
+}
+
+.home__contact{
+ margin: 16px;
+ background-color: transparent;
+ border: var(--color-white) 2px solid;
+ padding: 8px 12px;
+ color: var(--color-white);
+ font-size: var(--font-regular);
+ border-radius: var(--size-border-radius);
+ cursor: pointer;
+}
