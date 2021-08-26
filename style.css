@@ -5,7 +5,13 @@
     --color-white:#ffffff;
     --color-light-white:#eeeeee;
     --color-dark-white:#bdbdbd;
-    --color-pink: #fe918d;
+    --color-ocean:#0174DF;
+    --color-dark-ocean:#013ADF;
+
+    
+
+
+
     --color-dark-pink:#ff6863;
     --color-black:#4d4d4d;
     --color-dark-grey: #4d4d4d;
@@ -88,9 +94,9 @@ p{
 #navbar{
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
+    background-color: var(--color-ocean);
     align-items: center;
-    padding: 16px;
+    padding: 8px 16px;
     color: var(--color-white);
 }
 
@@ -111,7 +117,7 @@ p{
 }
 
 .navbar__menu__items:hover{
-    background-color: var(--color-dark-pink);
+    background-color: var(--color-dark-ocean);
 }
 
 
