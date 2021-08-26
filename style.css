@@ -31,3 +31,9 @@
 
     /* Size */
 }
+
+
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
