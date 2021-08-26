@@ -48,6 +48,7 @@
 body{
     margin: 0;
     cursor:default;
+    min-width: 750px;
 }
 
 a{
@@ -58,6 +59,11 @@ a{
 ul{
     padding-left: 0;
     list-style: none;
+}
+
+section{
+    text-align: center;
+    padding: 50px;
 }
 
 
@@ -153,7 +159,7 @@ p{
     width: 250px;
     height:250px;
     border-radius: 75%;
-    margin-top:8px;
+    margin:8px 0px;
 }
 
 .home__contact{
@@ -166,3 +172,118 @@ p{
  border-radius: var(--size-border-radius);
  cursor: pointer;
 }
+
+
+/* About */
+
+.skill__icon{
+    border: black solid 1px;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    line-height: 185px;
+    border-radius: 100%;
+}
+
+
+#about>h2{
+    margin-top: 100px;
+}
+
+.about__title{
+
+}
+
+
+/* about__skills */
+.about__skills{
+    display: flex;
+    margin:50px;
+    justify-content: space-between;
+}
+
+.skill{
+    display: inline-block;
+    width: 33.3%;
+}
+
+
+.skill>h3{
+    font-weight: var(--weight-semi-bold);
+}
+
+.skill>p{
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color:var(--color-black);
+    margin: 8px 0;
+}
+
+.skill__icon{
+    margin-bottom: 16px;
+}
+
+.fa-html5{
+    font-size: 70px;
+}
+
+.fa-database{
+    font-size: 70px;
+}
+
+.fa-aws{
+    font-size: 70px;
+}
+
+
+
+/* about__hobbies */
+
+
+.about__hobbies{
+    display: flex;
+    margin:50px;
+}
+
+.hobby{
+    display: inline-block;
+    width: 33.3%;
+}
+
+.hobby__icon{
+    height: 100px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 22px;
+    
+}
+
+.hobby>h3{
+    font-weight: var(--weight-semi-bold);
+}
+
+.hobby>p{
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color:var(--color-black);
+    margin: 8px 0;
+}
+
+.hobby__icon{
+    margin-bottom: 16px;
+}
+
+
+.fa-film{
+    font-size: 70px;
+}
+
+.fa-dollar-sign{
+    font-size: 70px;
+}
+
+
+
+
+
