@@ -398,6 +398,10 @@ p{
     align-items:center;
 }
 
+.career__list>a{
+    margin-right: 5%;
+}
+
 .skill__icon i:hover{
     transform: scale(1.2);
     transition: var(--animation-duration);
