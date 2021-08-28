@@ -114,9 +114,9 @@ p{
     color: var(--color-white);
 }
 
-/* .navbar__menu{
-    display: flex;
-} */
+.navbar__menu{
+    display: inline;
+}
 
 .navbar__menu__items{
     display: inline;
