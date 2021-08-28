@@ -115,7 +115,7 @@ p{
 }
 
 .navbar__menu{
-    display: inline;
+    display: inline-flex;
 }
 
 .navbar__menu__items{
@@ -170,12 +170,15 @@ p{
 .home__contact{
  margin: 16px;
  background-color: transparent;
- border: var(--color-white) 2px solid;
+ border: black solid 3px;
+ /* var(--color-white) 2px solid; */
  padding: 8px 12px;
  color: var(--color-white);
- font-size: var(--font-regular);
+ font-size: var(--font-medium);
  border-radius: var(--size-border-radius);
  cursor: pointer;
+ color: black;
+
 }
 
 
