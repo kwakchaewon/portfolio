@@ -118,6 +118,10 @@ p{
     display: inline-flex;
 }
 
+.navbar__menu__div{
+    display: inline-flex;
+}
+
 .navbar__menu__items{
     display: inline;
     padding: 8px 12px;
@@ -492,6 +496,9 @@ p{
 @media screen and (max-width:768px) {
     .navbar__toggle{
         display: block;
+        align-self: center;
+        padding-top: 8px;
+
     }
     
     #navbar{
@@ -504,8 +511,13 @@ p{
     }
 
     .navbar__menu{
-        width: 100%;
+        width: 100%;        
     }
+
+    .navbar__menu ul{
+    display: none;
+    }
+
 
 
 }
