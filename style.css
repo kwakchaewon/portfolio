@@ -118,6 +118,10 @@ p{
     display: inline-flex;
 }
 
+.navbar__menu__div{
+    display: inline-flex;
+}
+
 .navbar__menu__items{
     display: inline;
     padding: 8px 12px;
@@ -138,6 +142,16 @@ p{
 .navbar__logo{
     font-size: var(--font-regular);
     font-weight: var( --weight-semi-bold);
+}
+
+
+/* toggle button */
+
+.navbar__toggle{
+    color: white;
+    border: none;
+    background-color: var(--color-ocean);
+    display: none;
 }
 
 
@@ -473,3 +487,37 @@ p{
 
 
 /* My work */
+
+
+
+
+
+/* for below 768px screen width */
+@media screen and (max-width:768px) {
+    .navbar__toggle{
+        display: block;
+        align-self: center;
+        padding-top: 8px;
+
+    }
+    
+    #navbar{
+        flex-direction: column;
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar__menu{
+        width: 100%;        
+    }
+
+    .navbar__menu ul{
+    display: none;
+    }
+
+
+
+}
