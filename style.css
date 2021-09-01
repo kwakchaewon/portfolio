@@ -532,17 +532,6 @@ p{
         margin-bottom: 25px;
     }
 
-    /* .contact__icon{
-        width: 100px;
-        height: 100px;
-        line-height: 129px;
-    }
-
-    .contact__icon>i{
-        font-size: 55px;     
-    }  */
-
-
     .hobby>p{
         padding: 0px 20px;
     }
@@ -634,5 +623,12 @@ p{
         margin-top: 25px;
     }
 
+    .skillset{
+        flex-direction: column;
+    }
+
+    .about__qualification{
+        padding-bottom: 25px;
+    }
 
 }
