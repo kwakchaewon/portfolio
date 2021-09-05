@@ -108,10 +108,19 @@ p{
 #navbar{
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-ocean);
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+
     align-items: center;
     padding: 8px 16px;
     color: var(--color-white);
+
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark{
+    background-color: var(--color-ocean);
 }
 
 .navbar__menu{
@@ -163,10 +172,12 @@ p{
 
 #home{
     text-align: center;
-    padding: 16px 0px;
     background-color: #65AAF0;
     color: var(--color-white);
     background: url(images/cloudpic.png) center/cover no-repeat;
+
+    padding-top:100px;
+    padding-bottom: 16px;
 }
 
 .home__title{
