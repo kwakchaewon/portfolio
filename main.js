@@ -30,7 +30,7 @@ document.addEventListener('scroll', () => {
 
 
 // make navbar__toggle transparent, font color black when it is on the top
-// 스크롤할때 navbar__toggle 폰트색을 검게
+// 스크롤할때 navbar__toggle 폰트색을 하얗게
 document.addEventListener('scroll',() => {
 
     if(window.scrollY > navbarHeight){
@@ -42,6 +42,8 @@ document.addEventListener('scroll',() => {
 }
 );
 
+// make navbar__logo font color white when it is on the top
+// 스크롤할때 navbar__toggle__logo 폰트색을 하얗게
 document.addEventListener('scroll',() => {
 
     if(window.scrollY > navbarHeight){
@@ -49,7 +51,6 @@ document.addEventListener('scroll',() => {
     } else {
         navbar__logo.classList.replace('navbar__logo__scroll','navbar__logo');
     }
-
 }
 );
 
