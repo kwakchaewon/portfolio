@@ -153,16 +153,41 @@ p{
     font-weight: var( --weight-semi-bold);
 }
 
+.navbar__logo__scroll{
+    font-size: var(--font-regular);
+    font-weight: var( --weight-semi-bold);
+}
+
+.navbar__logo a{
+    color: black;
+}
+
+.navbar__logo__scroll a{
+    color: white;
+}
+
+
 
 /* toggle button */
 
 .navbar__toggle{
+    color: black;
+    position: absolute;
+    top:5px;
+    right:8px;
+    font-size: 24px;
+    background-color: transparent;
+    display: none;
+    border: none;
+}
+
+.navbar__toggle__dark{
     color: white;
     position: absolute;
     top:5px;
     right:8px;
     font-size: 24px;
-    background-color: var(--color-ocean);
+    background-color: transparent;
     display: none;
     border: none;
 }
@@ -665,6 +690,12 @@ p{
 
 
     .navbar__toggle{
+        position: absolute;
+        align-self: center;
+        display: block;
+    }
+
+    .navbar__toggle__dark{
         position: absolute;
         align-self: center;
         display: block;

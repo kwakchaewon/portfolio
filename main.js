@@ -8,6 +8,12 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
+const navbar__toggle = document.querySelector('.navbar__toggle');
+
+const navbar__logo = document.querySelector('.navbar__logo');
+
+
+
 //make navbar transparent when it is on the top
 // 스크롤을 할때마다 navbar를 투명하게
 document.addEventListener('scroll', () => {
@@ -22,5 +28,29 @@ document.addEventListener('scroll', () => {
 }
 );
 
+
+// make navbar__toggle transparent, font color black when it is on the top
+// 스크롤할때 navbar__toggle 폰트색을 검게
+document.addEventListener('scroll',() => {
+
+    if(window.scrollY > navbarHeight){
+        navbar__toggle.classList.replace('navbar__toggle','navbar__toggle__dark');
+    } else {
+        navbar__toggle.classList.replace('navbar__toggle__dark','navbar__toggle');
+    }
+
+}
+);
+
+document.addEventListener('scroll',() => {
+
+    if(window.scrollY > navbarHeight){
+        navbar__logo.classList.replace('navbar__logo','navbar__logo__scroll');
+    } else {
+        navbar__logo.classList.replace('navbar__logo__scroll','navbar__logo');
+    }
+
+}
+);
 
 
