@@ -4,6 +4,7 @@
 
 'use strict';
 
+
 // querySelector를 사용하여 html내에 있는 요소를 변수로 가져옴 
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -21,18 +22,9 @@ const contact__location = document.querySelector('#contact').offsetTop;
 
 
 
-// const about__title__Location = document.querySelector('.about__title').offsetTop-100;
-// const about__title__Location = document.querySelector('.about__title').offsetTop-100;
-// const about__title__Location = document.querySelector('.about__title').offsetTop-100;
-
-
-
-
 //make navbar transparent when it is on the top
 // 스크롤을 할때마다 navbar를 투명하게
 document.addEventListener('scroll', () => {
-    // console.log(window.scrollY)
-    // console.log('navbarHeight :' + navbarHeight)
 
     if(window.scrollY > navbarHeight){
         navbar.classList.add('navbar--dark');
@@ -69,10 +61,29 @@ document.addEventListener('scroll',() => {
 );
 
 
-
 // navbar__menu__item을 클릭하면 해당 메뉴 스크롤로 이동
-navbar__menu.addEventListener('click',() => {
-    window.scrollTo({top:contact__location, behavior:'smooth'});
+navbar__menu.addEventListener('click',(event) => {
+    console.log(event.target.dataset.link)
+
+    switch(event.target.dataset.link)
+    {
+        case "About":
+            window.scrollTo({top:about__location, behavior:'smooth'});
+            break;
+        case "Skills":
+            window.scrollTo({top:skills__location, behavior:'smooth'});
+            break;
+        case "My work":
+            window.scrollTo({top:mywork__location, behavior:'smooth'});
+            break;
+        case "Contact":
+            window.scrollTo({top:contact__location, behavior:'smooth'});
+            break;
+        case "Termonials":
+            break;
+        default:
+            break;
+    }
 }
 );
 
