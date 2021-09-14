@@ -14,13 +14,6 @@ const navbar__logo = document.querySelector('.navbar__logo');
 
 const navbar__menu = document.querySelector('.navbar__menu');
 
-// const home__location
-const about__location = document.querySelector('.about__title').offsetTop-100;
-const skills__location = document.querySelector('.about__skills').offsetTop-200;
-const mywork__location = document.querySelector('.about_mywork').offsetTop-100;
-const contact__location = document.querySelector('#contact').offsetTop;
-
-
 
 //make navbar transparent when it is on the top
 // 스크롤을 할때마다 navbar를 투명하게
@@ -61,9 +54,19 @@ document.addEventListener('scroll',() => {
 );
 
 
+
+
+
 // navbar__menu__item을 클릭하면 해당 메뉴 스크롤로 이동
+
+// const home__location
+const about__location = document.querySelector('.about__title').offsetTop-100;
+const skills__location = document.querySelector('.about__skills').offsetTop-200;
+const mywork__location = document.querySelector('.about_mywork').offsetTop-100;
+const contact__location = document.querySelector('#contact').offsetTop;
+
 navbar__menu.addEventListener('click',(event) => {
-    
+
     switch(event.target.dataset.link)
     {
         case "About":
@@ -86,6 +89,11 @@ navbar__menu.addEventListener('click',(event) => {
 }
 );
 
+
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:'smooth'});
+}
 
 
 
