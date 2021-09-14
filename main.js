@@ -63,8 +63,7 @@ document.addEventListener('scroll',() => {
 
 // navbar__menu__item을 클릭하면 해당 메뉴 스크롤로 이동
 navbar__menu.addEventListener('click',(event) => {
-    console.log(event.target.dataset.link)
-
+    
     switch(event.target.dataset.link)
     {
         case "About":
@@ -86,6 +85,9 @@ navbar__menu.addEventListener('click',(event) => {
     }
 }
 );
+
+
+
 
 
 
