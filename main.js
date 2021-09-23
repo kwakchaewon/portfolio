@@ -41,6 +41,7 @@ document.addEventListener('scroll',() => {
 }
 );
 
+
 // make navbar__logo font color white when it is on the top
 // 스크롤할때 navbar__toggle__logo 폰트색을 하얗게
 document.addEventListener('scroll',() => {
@@ -53,6 +54,17 @@ document.addEventListener('scroll',() => {
 }
 );
 
+
+// 스크롤을 할때 배경을 투명하게
+document.addEventListener('scroll',() => {
+
+    if(window.scrollY > navbarHeight){
+        navbar__logo.classList.replace('navbar__logo','navbar__logo__scroll');
+    } else {
+        navbar__logo.classList.replace('navbar__logo__scroll','navbar__logo');
+    }
+}
+);
 
 
 
@@ -88,6 +100,15 @@ navbar__menu.addEventListener('click',(event) => {
     }
 }
 );
+
+// Make home slowly fade to transparent as the window scrolls down
+const home = document.querySelector('.home__contatiner')
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll',()=>{
+    console.log(1-window.scrollY/homeHeight);
+    home.style.opacity = 1-(window.scrollY/homeHeight);
+})
+
 
 
 function scrollIntoView(selector){
